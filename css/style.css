@@ -139,7 +139,11 @@ span {
   max-width: 90ch;
   padding: 0 1rem;
 }
-
+@media (max-width: 768px) {
+  .home-content h3:nth-of-type(2) {
+    font-size: 2rem; 
+    margin-bottom: 1.5rem;
+  }
 .about {
   display: flex;
   justify-content: center;
