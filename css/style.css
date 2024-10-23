@@ -141,13 +141,20 @@ span {
 }
 
 @media (max-width: 768px) {
-.home-content h3:nth-of-type(2) {
-    font-size: 2rem; 
-    margin-bottom: 1.5rem;
-  }
 .home-content h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 1.6rem; /* Adjust font size for mobile */
+    margin-bottom: 1rem; /* Reduce margin */
+  }
+
+  .home-content h3:nth-of-type(2) {
+    font-size: 2rem; /* Further reduce font size for the typed effect */
+    margin-bottom: 1.5rem; /* Adjust margin as needed */
+  }
+
+  .home-content p,
+  .two-lines {
+    font-size: 1.4rem; /* Slightly reduce paragraph font size */
+    max-width: 100%; /* Ensure full width on mobile */
   }
   
 .about {
