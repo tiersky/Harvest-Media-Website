@@ -141,23 +141,49 @@ span {
 }
 
 @media (max-width: 768px) {
-.home-content h3 {
+  .home {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 1rem 1rem 1rem; /* Optional: Add some padding for better spacing */
+  }
+
+  .home-img {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Ensure it takes full width */
+    margin-top: 2rem; /* Optional: Add spacing between content and image */
+  }
+
+  .home-img img {
+    width: 80vw; /* Adjust image size for mobile */
+    max-width: 300px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .home-content h1 {
+    font-size: 3rem; /* Reduce font size for mobile */
+    text-align: left; /* Align text to the left */
+  }
+
+  .home-content h3 {
     font-size: 1.6rem; /* Adjust font size for mobile */
     margin-bottom: 1rem; /* Reduce margin */
   }
 
   .home-content h3:nth-of-type(2) {
     font-size: 2rem; /* Further reduce font size for the typed effect */
-    margin-bottom: 1.5rem; /* Adjust margin as needed */
+    margin-bottom: 1.5rem;
+    padding: 0 0.1rem; /* Adjust margin as needed */
   }
 
   .home-content p,
   .two-lines {
     font-size: 1.6rem; /* Slightly reduce paragraph font size */
     max-width: 100%;
-    padding: 0 0.1rem;/* Ensure full width on mobile */
+    padding: 0 0.1rem; /* Ensure full width on mobile */
   }
-  
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -318,14 +344,17 @@ span {
   }
 }
 .services {
+  position: relative;
   min-height: auto;
   padding-bottom: 10rem;
   background-color: var(--second-bg-color);
+  overflow: hidden;
 }
 
 .services h2 {
   margin-bottom: 5rem;
   color: floralwhite;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .services-container {
@@ -338,7 +367,7 @@ span {
 
 .services-container .services-box {
   flex: 1 1 30rem;
-  background: var(--second-bg-color);
+  background: rgba(40, 37, 38, 0.5); /* 50% opacity */
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
